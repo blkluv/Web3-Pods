@@ -15,9 +15,9 @@ import Minter from "../components/Minter";
 import { ToastContainer } from "react-toastify";
 
 const particle = new ParticleAuthModule.ParticleNetwork({
-  projectId: "bce136fd-0a1c-462e-b07a-111bfb50f0b3",
-  clientKey: "czotlqLY2LS059VbTYRmLQ3rcx5n3zhXa8J23j23",
-  appId: "585a5a3b-4a4b-4d55-a80c-94b422b28dc7",
+  projectId: "e0710b6b-8992-4c1f-af0c-90ddbd9f041f",
+  clientKey: "coUkkiyela2Bt1irY2AyjS0RcxwWjneFGqTEE0MG",
+  appId: "f43d843f-2b27-4b3b-8b26-482732ba2283",
   wallet: {
     displayWalletEntry: true,
     defaultWalletEntryPosition: ParticleAuthModule.WalletEntryPosition.BR,
@@ -32,7 +32,7 @@ const bundler: IBundler = new Bundler({
   })
   
 const paymaster: IPaymaster = new BiconomyPaymaster({
-  paymasterUrl: "https://paymaster.biconomy.io/api/v1/84531/CNnMeQGyt.afe2e811-240d-44df-a4f1-0a280c78d9f4"
+  paymasterUrl: "https://paymaster.biconomy.io/api/v1/84531/IyFW4VPt9.28b5665b-2603-4448-9d02-7d7c04d15028"
 })
 
 
@@ -93,13 +93,13 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Web3Pods</title>
-        <meta name="description" content="Web3Pods" />
+        <title>Blockcast</title>
+        <meta name="description" content="Blockcast" />
       </Head>
       <main className={styles.main}>
         <div className={styles.submain}>
           <div>
-            <h1>Web3Pods</h1>
+            <h1>Blockcast</h1>
             {!smartAccount && <p>Login to mint a pod.</p>}
             {!loading && !address && (
               <button onClick={connect} className={styles.connect}>
